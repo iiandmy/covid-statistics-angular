@@ -1,0 +1,7 @@
+<div>
+  <h2>{{choosenCountry}}</h2>
+  <label for="country-choose">Country: </label>
+  <select [(ngModel)]="choosenCountry">
+    <option *ngFor="let country of countryList" [value]="country.slug">{{ country.slug }}</option>
+  </select>
+</div>
